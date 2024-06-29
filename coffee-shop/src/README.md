@@ -25,3 +25,15 @@ npm run dev
 
 ## Nextjs
 nextjs allows us to build full-stack applications within one repo. Is is very similar to what you have seen so far with react, (except for file-based routing. So be careful what you add to the pages folder). It then adds a new folder inside pages called api, which allows us to build our api.
+
+## API
+To start to make an endpoint in the api folder under pages create a new .js file
+To start copy the content of the hello.js file that nextjs provides
+use fetch to grab your api and since it's the same local host domain you can go "fetch/api/menu"
+to hit the api one time useEffect from react on pages/index.js
+to store the date we need to useState from react as well
+
+"@" is the alias of the root of our project, the src foulder, in this import syntax mport { db } from "@/server/db"
+
+## Database files
+copy in db.js and db.json from in class folder in module5 day 02
