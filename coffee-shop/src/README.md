@@ -1,14 +1,16 @@
 ## INITIAL START & SETUP
-## Bootstrapping our app
+## Bootstrapping our app using CLI of choice GIT BASH 
 npx create-next-app@latest coffee-shop --js --no-tailwind --src-dir --no-app --eslint --no-import-alias
+
+## Open VSCODE
 
 delete styles folder
 delete import of styles from _app.js
 delete next.svg and vercel.svg inside public folder
-make a features folder inside the src folder
-make a server folder inside the src folder
+make a features folder inside the src folder for react components
+make a server folder inside the src folder for backend server code
 
-delete everything inside index.js and replace with :
+delete everything inside index.js (nextjs renders this file and put on the page whatever component is exported from there. this is our root of the page.) and replace with our main export from this file :
 export default function Home() {
   return (
     <>
@@ -16,7 +18,9 @@ export default function Home() {
     </>
   );
 }
-from the correct directory, run:
+
+
+from the correct directory, (check package file to see it or just type nmp run in the CLI to see the commands available) run:
 npm run dev
 
 ## Nextjs
