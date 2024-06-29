@@ -35,5 +35,12 @@ to store the date we need to useState from react as well
 
 "@" is the alias of the root of our project, the src foulder, in this import syntax mport { db } from "@/server/db"
 
+example of fetch:
+  useEffect(() => {
+    fetch("/api/menu")
+    .then((res) => res.json()) //called a promise and the one below also a promise
+    .then((data => setMenu(data.menu))); //post request and async code (has to talk over the internet or local server and give back all the data from the json file and load that in and set in the state or our application)
+  }, []) //the empty bracket is when we want something to happen one time on page load. once this component is added to the page, run this one time. it empties the array.
+
 ## Database files
 copy in db.js and db.json from in class folder in module5 day 02
